@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career DNA Assessment</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#d7eeee;
+      padding:40px 20px;
+    }
+
+    .container{
+      max-width:750px;
+      margin:auto;
+    }
+
+    /* Banner */
+    .banner img{
+      width:100%;
+      display:block;
+      border-radius:10px 10px 0 0;
+    }
+
+    /* Intro Card */
+    .intro-card{
+      background:#fff;
+      padding:35px;
+      border-top:10px solid #42c7c7;
+      border-radius:0 0 10px 10px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom:25px;
+    }
+
+    .intro-card h1{
+      font-size:40px;
+      line-height:1.3;
+      margin-bottom:20px;
+      color:#222;
+    }
+
+    .intro-card p{
+      font-size:18px;
+      line-height:1.8;
+      color:#333;
+      margin-bottom:20px;
+    }
+
+    .intro-card ol{
+      margin-left:25px;
+      margin-bottom:25px;
+    }
+
+    .intro-card ol li{
+      font-size:18px;
+      margin-bottom:10px;
+      line-height:1.6;
+    }
+
+    .highlight{
+      font-style:italic;
+      font-weight:bold;
+    }
+
+    .footer{
+      border-top:1px solid #ddd;
+      margin-top:20px;
+      padding-top:15px;
+      font-size:14px;
+      color:#666;
+    }
+
+    .footer a{
+      color:#1a73e8;
+      text-decoration:none;
+    }
+
+    /* Form Cards */
+    .form-card{
+      background:#fff;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 1px 3px rgba(0,0,0,0.1);
+      margin-bottom:20px;
+    }
+
+    .form-card label{
+      display:block;
+      font-size:22px;
+      font-weight:600;
+      margin-bottom:20px;
+      color:#222;
+      line-height:1.6;
+    }
+
+    .form-card label span{
+      color:red;
+    }
+
+    /* Inputs */
+    .form-card input[type="text"],
+    .form-card input[type="email"],
+    .form-card input[type="tel"]{
+      width:100%;
+      border:none;
+      border-bottom:1px solid #aaa;
+      padding:12px 0;
+      font-size:18px;
+      outline:none;
+      background:transparent;
+    }
+
+    .form-card input::placeholder{
+      color:#888;
+    }
+
+    /* Radio Buttons */
+    .radio-group{
+      margin-top:20px;
+    }
+
+    .radio-option{
+      display:flex !important;
+      align-items:center;
+      gap:12px;
+      margin-bottom:18px;
+      font-size:18px !important;
+      font-weight:400 !important;
+      cursor:pointer;
+      color:#333;
+    }
+
+    .radio-option input{
+      width:20px;
+      height:20px;
+      cursor:pointer;
+    }
+
+    /* Checkbox */
+    .checkbox-group{
+      margin-top:20px;
+    }
+
+    .checkbox-option{
+      display:flex !important;
+      align-items:center;
+      gap:14px;
+      margin-bottom:22px;
+      font-size:18px !important;
+      font-weight:400 !important;
+      cursor:pointer;
+      color:#333;
+    }
+
+    .checkbox-option input{
+      width:22px;
+      height:22px;
+      cursor:pointer;
+    }
+
+    /* Section Headings */
+    .section-card h2{
+      font-size:32px;
+      margin-bottom:20px;
+      color:#222;
+    }
+
+    .section-card p{
+      font-size:18px;
+      line-height:1.8;
+      color:#333;
+    }
+
+    /* Submit Button */
+    .submit-btn{
+      text-align:center;
+      margin-top:30px;
+      margin-bottom:50px;
+    }
+
+    .submit-btn button{
+      background:#673ab7;
+      color:#fff;
+      border:none;
+      padding:14px 40px;
+      font-size:18px;
+      border-radius:6px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .submit-btn button:hover{
+      background:#5a2ea6;
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+
+      .intro-card h1{
+        font-size:30px;
+      }
+
+      .intro-card p,
+      .intro-card ol li,
+      .form-card label,
+      .radio-option,
+      .checkbox-option{
+        font-size:16px !important;
+      }
+
+      .section-card h2{
+        font-size:26px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Banner -->
+    <div class="banner">
+      <img src="enrolify-banner.png" alt="Enrolify Banner">
+    </div>
+
+    <!-- Intro -->
+    <div class="intro-card">
+
+      <h1>Career DNA Assessment - by Enrolify for 10th Grade</h1>
+
+      <p>
+        This assessment is designed to help students gain clarity about their
+        career path based on their interests, personality, strengths, and
+        learning style.
+      </p>
+
+      <p>
+        By answering a set of carefully designed questions, you will receive a
+        personalised Career DNA Report that includes:
+      </p>
+
+      <ol>
+        <li>Your strengths and personality insights</li>
+        <li>Suitable career options</li>
+        <li>Recommended courses and pathways</li>
+        <li>A step-by-step roadmap for your future</li>
+      </ol>
+
+      <p>
+        This assessment takes approximately 8–10 minutes to complete.
+        Please answer honestly to get the most accurate results.
+      </p>
+
+      <p class="highlight">
+        Limited slots available for personalised report and counselling.
+      </p>
+
+      <div class="footer">
+        This form is automatically collecting emails from all respondents.
+        <a href="#">Change settings</a>
+      </div>
+
+    </div>
+
+    <!-- Student Name -->
+    <div class="form-card">
+      <label>Students Name <span>*</span></label>
+      <input type="text" placeholder="Short answer text">
+    </div>
+
+    <!-- Phone Number -->
+    <div class="form-card">
+      <label>Phone Number <span>*</span></label>
+      <input type="tel" placeholder="Short answer text">
+    </div>
+
+    <!-- Email -->
+    <div class="form-card">
+      <label>Email <span>*</span></label>
+      <input type="email" placeholder="Short answer text">
+    </div>
+
+    <!-- City -->
+    <div class="form-card">
+      <label>Present City & School/College <span>*</span></label>
+      <input type="text" placeholder="Short answer text">
+    </div>
+
+    <!-- Education -->
+    <div class="form-card">
+
+      <label>Current Educational Details <span>*</span></label>
+
+      <div class="radio-group">
+
+        <label class="radio-option">
+          <input type="radio" name="education">
+          Class 8th
+        </label>
+
+        <label class="radio-option">
+          <input type="radio" name="education">
+          Class 9th
+        </label>
+
+        <label class="radio-option">
+          <input type="radio" name="education">
+          Class 10th
+        </label>
+
+        <label class="radio-option">
+          <input type="radio" name="education">
+          Class 11th
+        </label>
+
+        <label class="radio-option">
+          <input type="radio" name="education">
+          Class 12th
+        </label>
+
+        <label class="radio-option">
+          <input type="radio" name="education">
+          Other
+        </label>
+
+      </div>
+
+    </div>
+
+    <!-- Parent Contact -->
+    <div class="form-card">
+      <label>Parent/Alternative Contact Number <span>*</span></label>
+      <input type="tel" placeholder="Short answer text">
+    </div>
+
+    <!-- Future -->
+    <div class="form-card">
+
+      <label>
+        When you think about your future, what feels closest to your current situation?
+        <span>*</span>
+      </label>
+
+      <div class="radio-group">
+
+        <label class="radio-option">
+          <input type="radio" name="future">
+          I am clear about what I want
+        </label>
+
+        <label class="radio-option">
+          <input type="radio" name="future">
+          I have some idea but I’m still confused
+        </label>
+
+        <label class="radio-option">
+          <input type="radio" name="future">
+          I am very confused
+        </label>
+
+        <label class="radio-option">
+          <input type="radio" name="future">
+          I haven’t really thought about it
+        </label>
+
+      </div>
+
+    </div>
+
+    <!-- Personality Section -->
+    <div class="form-card section-card">
+
+      <h2>Personality</h2>
+
+      <p>
+        <strong><em>Focus:</em></strong>
+        <em>
+          Social behaviour, consistency, openness,
+          emotional responses, and self-motivation
+        </em>
+      </p>
+
+    </div>
+
+    <!-- Question 1 -->
+    <div class="form-card">
+
+      <label>
+        You walk into a room full of unfamiliar people. What do you do?
+        <span>*</span>
+      </label>
+
+      <div class="checkbox-group">
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Start conversations confidently
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Talk to a few people
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Stay quiet and observe
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Avoid interaction
+        </label>
+
+      </div>
+
+    </div>
+
+    <!-- Question 2 -->
+    <div class="form-card">
+
+      <label>
+        You’re suddenly asked to lead a task. What do you do?
+        <span>*</span>
+      </label>
+
+      <div class="checkbox-group">
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Take charge immediately
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Try your best
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Feel unsure
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Avoid it
+        </label>
+
+      </div>
+
+    </div>
+
+    <!-- Question 3 -->
+    <div class="form-card">
+
+      <label>
+        You face a completely new situation. What do you feel?
+        <span>*</span>
+      </label>
+
+      <div class="checkbox-group">
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Excited to explore
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Curious but careful
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Nervous
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Avoid it
+        </label>
+
+      </div>
+
+    </div>
+
+    <!-- Question 4 -->
+    <div class="form-card">
+
+      <label>
+        You’re appreciated in front of others. How do you react?
+        <span>*</span>
+      </label>
+
+      <div class="checkbox-group">
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Feel confident and proud
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Feel happy
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Feel shy
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Feel awkward
+        </label>
+
+      </div>
+
+    </div>
+
+    <!-- Question 5 -->
+    <div class="form-card">
+
+      <label>
+        You’re given responsibility for something important. What happens?
+        <span>*</span>
+      </label>
+
+      <div class="checkbox-group">
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Take full ownership
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Try sincerely
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Feel pressured
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Try to avoid it
+        </label>
+
+      </div>
+
+    </div>
+
+    <!-- Career Interest Section -->
+    <div class="form-card section-card">
+
+      <h2>Career Interests</h2>
+
+      <p>
+        <strong><em>Focus:</em></strong>
+        <em>
+          Natural inclinations, curiosity, and task-based enjoyment
+        </em>
+      </p>
+
+    </div>
+
+    <!-- Career Question -->
+    <div class="form-card">
+
+      <label>
+        You are given a free day with no responsibilities.
+        What do you naturally choose to do?
+        <span>*</span>
+      </label>
+
+      <div class="checkbox-group">
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Learn something new (skills, tech, knowledge)
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Create something (design, content, ideas)
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Spend time with people
+        </label>
+
+        <label class="checkbox-option">
+          <input type="checkbox">
+          Relax and enjoy
+        </label>
+
+      </div>
+
+
+<!-- Career Interest Question 2 -->
+<div class="form-card">
+
+  <label>
+    You have to work on a class presentation.
+    What part do you naturally pick?
+    <span>*</span>
+  </label>
+
+  <div class="checkbox-group">
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="presentation">
+      Handling props and setup
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="presentation">
+      Doing the research and digging into facts
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="presentation">
+      Making the slides look cool and creative
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="presentation">
+      Explaining things clearly to the audience
+    </label>
+
+  </div>
+
+</div>
+
+<!-- Career Interest Question 3 -->
+<div class="form-card">
+
+  <label>
+    You’re at a school fair with many stalls.
+    Which one pulls you in first?
+    <span>*</span>
+  </label>
+
+  <div class="checkbox-group">
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="school-fair">
+      The robotics or game zone
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="school-fair">
+      The puzzle-solving challenge
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="school-fair">
+      The art and craft gallery
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="school-fair">
+      The public speaking competition
+    </label>
+
+  </div>
+
+</div>
+
+<!-- Career Interest Question 4 -->
+<div class="form-card">
+
+  <label>
+    You are working on a school/college project.
+    Which part do you enjoy most?
+    <span>*</span>
+  </label>
+
+  <div class="checkbox-group">
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="project">
+      Solving problems or technical work
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="project">
+      Organising and planning tasks
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="project">
+      Designing and making it look attractive
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="project">
+      Presenting and communicating ideas
+    </label>
+
+  </div>
+
+</div>
+
+<!-- Career Interest Question 5 -->
+<div class="form-card">
+
+  <label>
+    You attend a workshop. Which type excites you the most?
+    <span>*</span>
+  </label>
+
+  <div class="checkbox-group">
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="workshop">
+      Technology / coding
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="workshop">
+      Creative / design
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="workshop">
+      Helping people / social work
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="workshop">
+      Business / leadership
+    </label>
+
+  </div>
+
+</div>
+
+<!-- Decision Making & Behaviour Section -->
+<div class="form-card section-card">
+
+  <h2>Decision Making & Behaviour</h2>
+
+  <p>
+    <strong><em>Focus:</em></strong>
+    <em>
+      Decision-making, values, social awareness,
+      reaction in daily dilemmas
+    </em>
+  </p>
+
+</div>
+
+<!-- Decision Making Question 1 -->
+<div class="form-card">
+
+  <label>
+    Your group leader isn’t dividing the work fairly.
+    You feel it’s unfair. What do you do?
+    <span>*</span>
+  </label>
+
+  <div class="checkbox-group">
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="fairness">
+      Talk to them privately and suggest a better way
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="fairness">
+      Continue quietly and avoid conflict
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="fairness">
+      Feel upset but do nothing
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="fairness">
+      Stop participating
+    </label>
+
+  </div>
+
+</div>
+
+<!-- Decision Making Question 1 -->
+<div class="form-card">
+
+  <label>
+    Your group leader isn’t dividing the work fairly.
+    You feel it’s unfair. What do you do?
+    <span>*</span>
+  </label>
+
+  <div class="checkbox-group">
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="group-leader">
+      Talk to them privately and suggest a better way
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="group-leader">
+      Let it go, it’s not worth the argument
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="group-leader">
+      Tell the teacher or someone in charge
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="group-leader">
+      Stay quiet but do only your assigned part
+    </label>
+
+  </div>
+
+</div>
+
+<!-- Decision Making Question 2 -->
+<div class="form-card">
+
+  <label>
+    Your friend copied from you in a test and got full marks.
+    What’s your first thought?
+    <span>*</span>
+  </label>
+
+  <div class="checkbox-group">
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="copying-test">
+      I feel upset and talk to them honestly about it
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="copying-test">
+      I ignore it but try not to let it happen again
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="copying-test">
+      I ask them not to do it next time but stay chill
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="copying-test">
+      I feel proud that I could help
+    </label>
+
+  </div>
+
+</div>
+
+<!-- Decision Making Question 3 -->
+<div class="form-card">
+
+  <label>
+    You are leading a team, and one member is constantly distracted.
+    What’s your response?
+    <span>*</span>
+  </label>
+
+  <div class="checkbox-group">
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="team-member">
+      Talk to them and ask how you can help them focus
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="team-member">
+      Manage the work without involving them too much
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="team-member">
+      Tell the teacher they’re not contributing
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="team-member">
+      Ignore it and focus on your own work
+    </label>
+
+  </div>
+
+</div>
+
+<!-- Decision Making Question 4 -->
+<div class="form-card">
+
+  <label>
+    You have to make an important decision about your future.
+    What do you do?
+    <span>*</span>
+  </label>
+
+  <div class="checkbox-group">
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="future-decision">
+      Analyze all options logically
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="future-decision">
+      Ask guidance from others
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="future-decision">
+      Delay the decision
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="future-decision">
+      Avoid deciding
+    </label>
+
+  </div>
+
+</div>
+
+<!-- Decision Making Question 5 -->
+<div class="form-card">
+
+  <label>
+    You take a decision, but later feel unsure.
+    What do you do?
+    <span>*</span>
+  </label>
+
+  <div class="checkbox-group">
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="unsure-decision">
+      Stick and improve
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="unsure-decision">
+      Re-evaluate
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="unsure-decision">
+      Doubt yourself
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="unsure-decision">
+      Change quickly
+    </label>
+
+  </div>
+
+</div>
+
+<!-- Decision Making Question 6 -->
+<div class="form-card">
+
+  <label>
+    When things don’t go as planned, how do you respond?
+    <span>*</span>
+  </label>
+
+  <div class="checkbox-group">
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="things-planned">
+      Adapt and try another way
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="things-planned">
+      Stay calm and wait
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="things-planned">
+      Feel frustrated easily
+    </label>
+
+    <label class="checkbox-option">
+      <input type="checkbox" name="things-planned">
+      Give up quickly
+    </label>
+
+  </div>
+</div>
+
+    <!-- Submit -->
+    <div class="submit-btn">
+      <button type="submit">Submit</button>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
